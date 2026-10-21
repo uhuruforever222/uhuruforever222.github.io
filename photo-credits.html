@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Photo Credits | Endangered Animals Encyclopedia</title>
+
+    <style>
+
+        /* GENERAL PAGE STYLE */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            color: #263d2b;
+
+            line-height: 1.6;
+
+            /* CONTINUOUS JUNGLE BACKGROUND */
+
+            background-image:
+                linear-gradient(
+                    rgba(28, 67, 39, 0.30),
+                    rgba(28, 67, 39, 0.30)
+                ),
+                url("images/jungle/jungle-vegetation.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* HEADER */
+
+        header {
+            background: #496f3d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.25);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* LEFT HEADER FOLIAGE */
+
+        header::before {
+            content: "";
+
+            position: absolute;
+
+            left: -45px;
+
+            bottom: -65px;
+
+            width: 360px;
+
+            height: 230px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 80px 28px at 70px 75px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 26px at 125px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 70px 25px at 185px 35px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 85px 28px at 225px 85px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 180px 85px at 120px 190px,
+                    #d8edc9 0%,
+                    #d8edc9 68%,
+                    transparent 70%
+                );
+
+            transform: rotate(-12deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* RIGHT HEADER FOLIAGE */
+
+        header::after {
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+
+            top: -55px;
+
+            width: 360px;
+
+            height: 240px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 85px 28px at 285px 70px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 25px at 225px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 80px 26px at 180px 90px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 90px 28px at 250px 135px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                );
+
+            transform: rotate(18deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* HEADER WILDLIFE */
+
+        .header-wildlife {
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* TOUCAN */
+
+        .toucan {
+            position: absolute;
+
+            right: 55px;
+
+            top: 28px;
+
+            width: 72px;
+
+            height: 54px;
+
+            opacity: 0.14;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 17px;
+
+            width: 34px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 50% 45% 55%;
+        }
+
+        .toucan-head {
+            position: absolute;
+
+            left: 12px;
+
+            top: 8px;
+
+            width: 27px;
+
+            height: 27px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .toucan-beak {
+            position: absolute;
+
+            left: -12px;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 16px;
+
+            background: #d8edc9;
+
+            border-radius:
+                80% 15% 15% 80%;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 27px;
+
+            width: 32px;
+
+            height: 17px;
+
+            background: #d8edc9;
+
+            border-radius:
+                10% 80% 80% 10%;
+
+            transform: rotate(22deg);
+        }
+
+        .toucan-eye {
+            position: absolute;
+
+            left: 23px;
+
+            top: 16px;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* TREE FROG */
+
+        .frog {
+            position: absolute;
+
+            left: 55px;
+
+            top: 24px;
+
+            width: 65px;
+
+            height: 55px;
+
+            opacity: 0.13;
+
+            transform: rotate(8deg);
+        }
+
+        .frog-body {
+            position: absolute;
+
+            left: 18px;
+
+            top: 15px;
+
+            width: 35px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left,
+        .frog-eye-right {
+            position: absolute;
+
+            top: 7px;
+
+            width: 15px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left {
+            left: 17px;
+        }
+
+        .frog-eye-right {
+            left: 38px;
+        }
+
+        .frog-eye-left::after,
+        .frog-eye-right::after {
+            content: "";
+
+            position: absolute;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+
+            left: 5px;
+
+            top: 5px;
+        }
+
+        .frog-leg-left,
+        .frog-leg-right {
+            position: absolute;
+
+            width: 30px;
+
+            height: 8px;
+
+            background: #d8edc9;
+
+            border-radius: 20px;
+        }
+
+        .frog-leg-left {
+            left: 0;
+
+            top: 38px;
+
+            transform: rotate(25deg);
+        }
+
+        .frog-leg-right {
+            right: 0;
+
+            top: 39px;
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* LIZARD */
+
+        .header-lizard {
+            position: absolute;
+
+            left: 205px;
+
+            bottom: 16px;
+
+            width: 75px;
+
+            height: 28px;
+
+            opacity: 0.12;
+
+            transform: rotate(-8deg);
+        }
+
+        .lizard-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 9px;
+
+            width: 35px;
+
+            height: 13px;
+
+            background: #d8edc9;
+
+            border-radius: 60%;
+        }
+
+        .lizard-head {
+            position: absolute;
+
+            left: 10px;
+
+            top: 7px;
+
+            width: 17px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 45% 45% 55%;
+        }
+
+        .lizard-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 7px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+
+            transform: rotate(18deg);
+        }
+
+        .lizard-leg {
+            position: absolute;
+
+            width: 20px;
+
+            height: 6px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+        }
+
+        .lizard-leg.one {
+            left: 25px;
+
+            top: 17px;
+
+            transform: rotate(45deg);
+        }
+
+        .lizard-leg.two {
+            left: 42px;
+
+            top: 17px;
+
+            transform: rotate(-45deg);
+        }
+
+        .lizard-eye {
+            position: absolute;
+
+            left: 14px;
+
+            top: 10px;
+
+            width: 3px;
+
+            height: 3px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* HEADER TEXT */
+
+        header h1 {
+            font-size: 42px;
+
+            margin: 0 0 10px;
+
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 19px;
+
+            margin: 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: rgba(24, 58, 33, 0.97);
+
+            text-align: center;
+
+            padding: 16px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 10;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d8edc9;
+        }
+
+
+        /* MAIN CONTENT */
+
+        main {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 45px 20px;
+        }
+
+
+        /* PHOTO CREDIT SECTIONS */
+
+        section {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            padding: 35px;
+
+            margin-bottom: 45px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+
+            color: #f4f5e8;
+
+            text-align: center;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 12px 28px rgba(0, 0, 0, 0.30);
+        }
+
+        section h2 {
+            color: #e2edc9;
+
+            text-align: center;
+
+            font-size: 30px;
+
+            margin-top: 0;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        section p {
+            font-size: 17px;
+
+            text-align: center;
+
+            color: #f0f2e5;
+        }
+
+
+        /* LINKS */
+
+        section a {
+            color: #e2edc9;
+
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+        section a:hover {
+            color: white;
+        }
+
+
+        /* LICENSE */
+
+        .license {
+            color: #e2edc9;
+
+            font-weight: bold;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(47, 76, 42, 0.97),
+                    rgba(73, 102, 56, 0.97)
+                );
+
+            color: #edf1df;
+
+            padding: 30px 20px;
+
+            margin-top: 0;
+
+            text-align: center !important;
+
+            box-shadow:
+                0 -4px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        footer p {
+            margin: 8px 0;
+
+            text-align: center !important;
+
+            color: #edf1df;
+        }
+
+        footer a {
+            color: #e2edc9 !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white !important;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 8px;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            section {
+                padding: 25px 15px;
+
+                margin-bottom: 30px;
+            }
+
+
+            /* SMALLER HEADER DECORATION */
+
+            header::before {
+                width: 220px;
+
+                height: 160px;
+
+                left: -55px;
+
+                bottom: -45px;
+
+                opacity: 0.11;
+            }
+
+            header::after {
+                width: 220px;
+
+                height: 160px;
+
+                right: -55px;
+
+                top: -40px;
+
+                opacity: 0.11;
+            }
+
+            .toucan {
+                right: 15px;
+
+                top: 18px;
+
+                transform:
+                    scale(0.75)
+                    rotate(-7deg);
+
+                transform-origin: top right;
+            }
+
+            .frog {
+                left: 15px;
+
+                top: 20px;
+
+                transform:
+                    scale(0.75)
+                    rotate(8deg);
+
+                transform-origin: top left;
+            }
+
+            .header-lizard {
+                left: 50%;
+
+                bottom: 10px;
+
+                transform:
+                    translateX(-50%)
+                    scale(0.75)
+                    rotate(-8deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="header-wildlife">
+
+
+        <!-- TOUCAN -->
+
+        <div class="toucan">
+
+            <div class="toucan-tail"></div>
+
+            <div class="toucan-body"></div>
+
+            <div class="toucan-head"></div>
+
+            <div class="toucan-beak"></div>
+
+            <div class="toucan-eye"></div>
+
+        </div>
+
+
+        <!-- TREE FROG -->
+
+        <div class="frog">
+
+            <div class="frog-eye-left"></div>
+
+            <div class="frog-eye-right"></div>
+
+            <div class="frog-body"></div>
+
+            <div class="frog-leg-left"></div>
+
+            <div class="frog-leg-right"></div>
+
+        </div>
+
+
+        <!-- LIZARD -->
+
+        <div class="header-lizard">
+
+            <div class="lizard-tail"></div>
+
+            <div class="lizard-body"></div>
+
+            <div class="lizard-head"></div>
+
+            <div class="lizard-leg one"></div>
+
+            <div class="lizard-leg two"></div>
+
+            <div class="lizard-eye"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Endangered Animals Encyclopedia
+    </h1>
+
+    <p>
+        Making the world a better place one day at a time.
+    </p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="species.html">
+        Species
+    </a>
+
+    <a href="how-you-can-help.html">
+        How You Can Help
+    </a>
+
+    <a href="about-us.html">
+        About Us
+    </a>
+
+</nav>
+
+
+<!-- MAIN CONTENT -->
+
+<main>
+
+
+    <!-- 1. JUNGLE BACKGROUND -->
+
+    <section>
+
+        <h2>
+            Jungle Background
+        </h2>
+
+        <p>
+            Photo by Ibrahim Achiri.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:A_lush_green_jungle.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons — A lush green jungle.jpg
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 4.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized, cropped, and darkened with a color
+            overlay for use as the website background.
+        </p>
+
+    </section>
+
+
+    <!-- 2. AFRICAN FOREST ELEPHANT -->
+
+    <section>
+
+        <h2>
+            African Forest Elephant
+        </h2>
+
+        <p>
+            Photo by dsg-photo.com.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Forest_elephant.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 3.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 3. AMUR LEOPARD -->
+
+    <section>
+
+        <h2>
+            Amur Leopard
+        </h2>
+
+        <p>
+            Photo by William Warby.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Amur_Leopard_(227178231).jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY 3.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 4. ASIAN ELEPHANT -->
+
+    <section>
+
+        <h2>
+            Asian Elephant
+        </h2>
+
+        <p>
+            Photo by Bernard DUPONT.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Asian_Elephant_(Elephas_maximus)_(7851686088).jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/2.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 2.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 5. BLACK RHINOCEROS -->
+
+    <section>
+
+        <h2>
+            Black Rhinoceros
+        </h2>
+
+        <p>
+            Photo by Bernard DUPONT.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Black_Rhinoceros_(Diceros_bicornis)_(30507962876).jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/2.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 2.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 6. BLUE WHALE -->
+
+    <section>
+
+        <h2>
+            Blue Whale
+        </h2>
+
+        <p>
+            Photo by NOAA Fisheries / Lisa Conger.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Blue-whale.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 7. GHARIAL -->
+
+    <section>
+
+        <h2>
+            Gharial
+        </h2>
+
+        <p>
+            Photo by Mike Prince.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Gharial_(29572915727).jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by/2.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY 2.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 8. GIANT PANDA -->
+
+    <section>
+
+        <h2>
+            Giant Panda
+        </h2>
+
+        <p>
+            Photo by Jeff Kubina.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Giant_Panda_2004-03-2.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Released into the
+
+            <span class="license">
+                Public Domain
+            </span>
+
+            by the photographer.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 9. GREEN SEA TURTLE -->
+
+    <section>
+
+        <h2>
+            Green Sea Turtle
+        </h2>
+
+        <p>
+            Photo by David Vogel / U.S. Fish and Wildlife Service.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Green-sea-turtle.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 10. HAWKSBILL SEA TURTLE -->
+
+    <section>
+
+        <h2>
+            Hawksbill Sea Turtle
+        </h2>
+
+        <p>
+            Photo by Daniel Sasse.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Hawksbill_turtle_eating.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 4.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 11. KAKAPO -->
+
+    <section>
+
+        <h2>
+            Kakapo
+        </h2>
+
+        <p>
+            Photo by Department of Conservation / Chris Birmingham.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by/2.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY 2.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 12. MOUNTAIN GORILLA -->
+
+    <section>
+
+        <h2>
+            Mountain Gorilla
+        </h2>
+
+        <p>
+            Photo by Ad Meskens.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Mountain_gorilla_Virunga_21.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 3.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 13. PANGOLIN -->
+
+    <section>
+
+        <h2>
+            Pangolin
+        </h2>
+
+        <p>
+            Photo by Sandip Kumar.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Pangolin_(Gir_Forest,_Gujarat,_India).jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 3.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 14. RED PANDA -->
+
+    <section>
+
+        <h2>
+            Red Panda
+        </h2>
+
+        <p>
+            Photo by ogwen.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Red_Panda_(58717656).jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by/2.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY 2.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 15. SAOLA -->
+
+    <section>
+
+        <h2>
+            Saola
+        </h2>
+
+        <p>
+            Original uploader: Silviculture at Vietnamese Wikipedia.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 3.0
+            </a>
+
+            and the GNU Free Documentation License.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 16. SEA OTTER -->
+
+    <section>
+
+        <h2>
+            Sea Otter
+        </h2>
+
+        <p>
+            Photo by U.S. Geological Survey (USGS).
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Alaskan_Sea_Otter.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 17. SNOW LEOPARD -->
+
+    <section>
+
+        <h2>
+            Snow Leopard
+        </h2>
+
+        <p>
+            Photo by Ron Singer, U.S. Fish and Wildlife Service.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Snow_leopard.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 18. SUMATRAN ORANGUTAN -->
+
+    <section>
+
+        <h2>
+            Sumatran Orangutan
+        </h2>
+
+        <p>
+            Photo by Greg Hume.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:SUMATRAN_ORANGUTAN.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by-sa/3.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY-SA 3.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 19. SUMATRAN TIGER -->
+
+    <section>
+
+        <h2>
+            Sumatran Tiger
+        </h2>
+
+        <p>
+            Photo by Joe Milmoe / U.S. Fish and Wildlife Service.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 20. VAQUITA -->
+
+    <section>
+
+        <h2>
+            Vaquita
+        </h2>
+
+        <p>
+            Photo by Paula Olson, NOAA.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Vaquita2_Olson_NOAA.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            This image is in the
+
+            <span class="license">
+                Public Domain
+            </span>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+    <!-- 21. WHALE SHARK -->
+
+    <section>
+
+        <h2>
+            Whale Shark
+        </h2>
+
+        <p>
+            Photo by Libby Hepburn.
+        </p>
+
+        <p>
+            Source:
+
+            <a
+                href="https://commons.wikimedia.org/wiki/File:Rhincodon_typus_351871536.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Wikimedia Commons
+            </a>
+        </p>
+
+        <p>
+            Licensed under
+
+            <a
+                class="license"
+                href="https://creativecommons.org/licenses/by/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                CC BY 4.0
+            </a>.
+        </p>
+
+        <p>
+            The image was resized and compressed for web use.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Endangered Animals Encyclopedia
+    </p>
+
+    <p>
+        Learn more and make a difference.
+    </p>
+
+    <p>
+        <a href="index.html">
+            Return to Home
+        </a>
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

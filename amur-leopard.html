@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amur Leopard | Endangered Animals Encyclopedia</title>
+
+    <meta
+        name="description"
+        content="Learn about the Amur leopard, including its habitat, diet, behavior, threats, conservation efforts, and importance to its ecosystem."
+    >
+
+    <style>
+
+        /* ==================================================
+           GENERAL PAGE STYLE
+           ================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            color: #263d2b;
+
+            line-height: 1.6;
+
+            background-image:
+                linear-gradient(
+                    rgba(28, 67, 39, 0.30),
+                    rgba(28, 67, 39, 0.30)
+                ),
+                url("images/jungle/jungle-vegetation.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* ==================================================
+           HEADER
+           ================================================== */
+
+        header {
+            background: #496f3d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.25);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* ==================================================
+           LEFT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::before {
+            content: "";
+
+            position: absolute;
+
+            left: -45px;
+
+            bottom: -65px;
+
+            width: 360px;
+
+            height: 230px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 80px 28px at 70px 75px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 26px at 125px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 70px 25px at 185px 35px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 85px 28px at 225px 85px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 180px 85px at 120px 190px,
+                    #d8edc9 0%,
+                    #d8edc9 68%,
+                    transparent 70%
+                );
+
+            transform: rotate(-12deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           RIGHT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::after {
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+
+            top: -55px;
+
+            width: 360px;
+
+            height: 240px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 85px 28px at 285px 70px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 25px at 225px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 80px 26px at 180px 90px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 90px 28px at 250px 135px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                );
+
+            transform: rotate(18deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           HEADER WILDLIFE
+           ================================================== */
+
+        .header-wildlife {
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* ==================================================
+           TOUCAN
+           ================================================== */
+
+        .toucan {
+            position: absolute;
+
+            right: 55px;
+
+            top: 28px;
+
+            width: 72px;
+
+            height: 54px;
+
+            opacity: 0.14;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 17px;
+
+            width: 34px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 50% 45% 55%;
+        }
+
+        .toucan-head {
+            position: absolute;
+
+            left: 12px;
+
+            top: 8px;
+
+            width: 27px;
+
+            height: 27px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .toucan-beak {
+            position: absolute;
+
+            left: -12px;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 16px;
+
+            background: #d8edc9;
+
+            border-radius:
+                80% 15% 15% 80%;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 27px;
+
+            width: 32px;
+
+            height: 17px;
+
+            background: #d8edc9;
+
+            border-radius:
+                10% 80% 80% 10%;
+
+            transform: rotate(22deg);
+        }
+
+        .toucan-eye {
+            position: absolute;
+
+            left: 23px;
+
+            top: 16px;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           TREE FROG
+           ================================================== */
+
+        .frog {
+            position: absolute;
+
+            left: 55px;
+
+            top: 24px;
+
+            width: 65px;
+
+            height: 55px;
+
+            opacity: 0.13;
+
+            transform: rotate(8deg);
+        }
+
+        .frog-body {
+            position: absolute;
+
+            left: 18px;
+
+            top: 15px;
+
+            width: 35px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left,
+        .frog-eye-right {
+            position: absolute;
+
+            top: 7px;
+
+            width: 15px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left {
+            left: 17px;
+        }
+
+        .frog-eye-right {
+            left: 38px;
+        }
+
+        .frog-eye-left::after,
+        .frog-eye-right::after {
+            content: "";
+
+            position: absolute;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+
+            left: 5px;
+
+            top: 5px;
+        }
+
+        .frog-leg-left,
+        .frog-leg-right {
+            position: absolute;
+
+            width: 30px;
+
+            height: 8px;
+
+            background: #d8edc9;
+
+            border-radius: 20px;
+        }
+
+        .frog-leg-left {
+            left: 0;
+
+            top: 38px;
+
+            transform: rotate(25deg);
+        }
+
+        .frog-leg-right {
+            right: 0;
+
+            top: 39px;
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* ==================================================
+           LIZARD
+           ================================================== */
+
+        .header-lizard {
+            position: absolute;
+
+            left: 205px;
+
+            bottom: 16px;
+
+            width: 75px;
+
+            height: 28px;
+
+            opacity: 0.12;
+
+            transform: rotate(-8deg);
+        }
+
+        .lizard-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 9px;
+
+            width: 35px;
+
+            height: 13px;
+
+            background: #d8edc9;
+
+            border-radius: 60%;
+        }
+
+        .lizard-head {
+            position: absolute;
+
+            left: 10px;
+
+            top: 7px;
+
+            width: 17px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 45% 45% 55%;
+        }
+
+        .lizard-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 7px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+
+            transform: rotate(18deg);
+        }
+
+        .lizard-leg {
+            position: absolute;
+
+            width: 20px;
+
+            height: 6px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+        }
+
+        .lizard-leg.one {
+            left: 25px;
+
+            top: 17px;
+
+            transform: rotate(45deg);
+        }
+
+        .lizard-leg.two {
+            left: 42px;
+
+            top: 17px;
+
+            transform: rotate(-45deg);
+        }
+
+        .lizard-eye {
+            position: absolute;
+
+            left: 14px;
+
+            top: 10px;
+
+            width: 3px;
+
+            height: 3px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           HEADER TEXT
+           ================================================== */
+
+        header h1 {
+            font-size: 42px;
+
+            margin: 0 0 10px;
+
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 19px;
+
+            margin: 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* ==================================================
+           NAVIGATION
+           ================================================== */
+
+        nav {
+            background-color: rgba(24, 58, 33, 0.97);
+
+            text-align: center;
+
+            padding: 16px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 10;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d8edc9;
+        }
+
+
+        /* ==================================================
+           BREADCRUMBS
+           ================================================== */
+
+        .breadcrumbs {
+            max-width: 1100px;
+
+            margin: 30px auto 0;
+
+            padding: 0 20px;
+
+            color: #edf4d7;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+        .breadcrumbs a {
+            color: #e2edc9;
+
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           MAIN CONTENT
+           ================================================== */
+
+        main {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 30px 20px 45px;
+        }
+
+
+        /* ==================================================
+           ARTICLE
+           ================================================== */
+
+        article {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+
+            color: #f4f5e8;
+        }
+
+
+        /* ==================================================
+           ARTICLE TITLE
+           ================================================== */
+
+        article h1 {
+            color: #e2edc9;
+
+            font-size: 40px;
+
+            margin-top: 0;
+
+            margin-bottom: 5px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .scientific-name {
+            color: #e2e8d8;
+
+            font-style: italic;
+
+            font-size: 18px;
+
+            margin-top: 0;
+        }
+
+
+        /* ==================================================
+           CONSERVATION STATUS
+           ================================================== */
+
+        .status {
+            display: inline-block;
+
+            background-color: #7b3f35;
+
+            color: white;
+
+            padding: 7px 15px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin: 10px 0 25px;
+        }
+
+
+        /* ==================================================
+           MAIN ANIMAL IMAGE
+           ================================================== */
+
+        .animal-image {
+            width: 100%;
+
+            max-height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           ARTICLE HEADINGS
+           ================================================== */
+
+        article h2 {
+            color: #e2edc9;
+
+            font-size: 29px;
+
+            margin-top: 40px;
+
+            border-bottom:
+                2px solid rgba(226, 237, 201, 0.35);
+
+            padding-bottom: 8px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.20);
+        }
+
+
+        /* ==================================================
+           ARTICLE TEXT
+           ================================================== */
+
+        article p {
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           FACT BOX
+           ================================================== */
+
+        .fact-box {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            border-left:
+                5px solid #496f3d;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin: 25px 0;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .fact-box p {
+            margin: 7px 0;
+
+            color: #3d4935;
+        }
+
+
+        /* ==================================================
+           LISTS
+           ================================================== */
+
+        article ul {
+            padding-left: 25px;
+        }
+
+        article li {
+            margin-bottom: 8px;
+
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           RELATED SPECIES
+           ================================================== */
+
+        .related-species {
+            background-color: rgba(79, 103, 58, 0.94);
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            margin-top: 40px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.30);
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.18);
+        }
+
+        .related-species h2 {
+            margin-top: 0;
+        }
+
+        .related-species a {
+            color: #e2edc9;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+        .related-species a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           BUTTONS
+           ================================================== */
+
+        .button {
+            display: inline-block;
+
+            background-color: #496f3d;
+
+            color: white !important;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            margin-top: 20px;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.20);
+        }
+
+        .button:hover {
+            background-color: #31552e;
+
+            color: white !important;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           SOURCES
+           ================================================== */
+
+        .sources {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .sources h2 {
+            margin-top: 0;
+
+            color: #31552e;
+
+            border-bottom:
+                2px solid rgba(49, 85, 46, 0.20);
+        }
+
+        .sources p {
+            color: #3d4935;
+
+            font-size: 14px;
+        }
+
+        .sources a {
+            color: #31552e;
+
+            font-weight: bold;
+        }
+
+        .sources a:hover {
+            color: #496f3d;
+        }
+
+
+        /* ==================================================
+           FOOTER
+           ================================================== */
+
+        footer {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(47, 76, 42, 0.97),
+                    rgba(73, 102, 56, 0.97)
+                );
+
+            color: #edf1df;
+
+            padding: 30px 20px;
+
+            margin-top: 0;
+
+            text-align: center !important;
+
+            box-shadow:
+                0 -4px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        footer p {
+            margin: 8px 0;
+
+            text-align: center !important;
+
+            color: #edf1df;
+        }
+
+        footer a {
+            color: #e2edc9 !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white !important;
+        }
+
+
+        /* ==================================================
+           MOBILE
+           ================================================== */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 8px;
+            }
+
+            main {
+                padding: 25px 15px 30px;
+            }
+
+            .breadcrumbs {
+                margin: 25px 15px 0;
+
+                padding: 0;
+            }
+
+            article {
+                padding: 25px 15px;
+            }
+
+            article h1 {
+                font-size: 32px;
+            }
+
+            article h2 {
+                font-size: 25px;
+            }
+
+            article p,
+            article li {
+                font-size: 16px;
+            }
+
+            .animal-image {
+                max-height: 350px;
+            }
+
+
+            /* SMALLER RAINFOREST DECORATION */
+
+            header::before {
+                width: 220px;
+
+                height: 160px;
+
+                left: -55px;
+
+                bottom: -45px;
+
+                opacity: 0.11;
+            }
+
+            header::after {
+                width: 220px;
+
+                height: 160px;
+
+                right: -55px;
+
+                top: -40px;
+
+                opacity: 0.11;
+            }
+
+            .toucan {
+                right: 15px;
+
+                top: 18px;
+
+                transform:
+                    scale(0.75)
+                    rotate(-7deg);
+
+                transform-origin: top right;
+            }
+
+            .frog {
+                left: 15px;
+
+                top: 20px;
+
+                transform:
+                    scale(0.75)
+                    rotate(8deg);
+
+                transform-origin: top left;
+            }
+
+            .header-lizard {
+                left: 50%;
+
+                bottom: 10px;
+
+                transform:
+                    translateX(-50%)
+                    scale(0.75)
+                    rotate(-8deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+     ================================================== -->
+
+<header>
+
+    <div class="header-wildlife">
+
+
+        <!-- TOUCAN -->
+
+        <div class="toucan">
+
+            <div class="toucan-tail"></div>
+
+            <div class="toucan-body"></div>
+
+            <div class="toucan-head"></div>
+
+            <div class="toucan-beak"></div>
+
+            <div class="toucan-eye"></div>
+
+        </div>
+
+
+        <!-- TREE FROG -->
+
+        <div class="frog">
+
+            <div class="frog-eye-left"></div>
+
+            <div class="frog-eye-right"></div>
+
+            <div class="frog-body"></div>
+
+            <div class="frog-leg-left"></div>
+
+            <div class="frog-leg-right"></div>
+
+        </div>
+
+
+        <!-- LIZARD -->
+
+        <div class="header-lizard">
+
+            <div class="lizard-tail"></div>
+
+            <div class="lizard-body"></div>
+
+            <div class="lizard-head"></div>
+
+            <div class="lizard-leg one"></div>
+
+            <div class="lizard-leg two"></div>
+
+            <div class="lizard-eye"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Endangered Animals Encyclopedia
+    </h1>
+
+    <p>
+        Making the world a better place one day at a time.
+    </p>
+
+</header>
+
+
+<!-- ==================================================
+     NAVIGATION
+     ================================================== -->
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="species.html">
+        Species
+    </a>
+
+    <a href="how-you-can-help.html">
+        How You Can Help
+    </a>
+
+    <a href="about-us.html">
+        About Us
+    </a>
+
+</nav>
+
+
+<!-- ==================================================
+     BREADCRUMBS
+     ================================================== -->
+
+<div class="breadcrumbs">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    &nbsp; / &nbsp;
+
+    <a href="species.html">
+        Species
+    </a>
+
+    &nbsp; / &nbsp;
+
+    Amur Leopard
+
+</div>
+
+
+<!-- ==================================================
+     MAIN CONTENT
+     ================================================== -->
+
+<main>
+
+    <article>
+
+
+        <!-- ARTICLE TITLE -->
+
+        <h1>
+            Amur Leopard
+        </h1>
+
+        <p class="scientific-name">
+            Scientific name: Panthera pardus orientalis
+        </p>
+
+        <span class="status">
+            Critically Endangered
+        </span>
+
+
+        <!-- IMAGE -->
+
+        <img
+            class="animal-image"
+            src="images/amur-leopard/amur-leopard.jpg"
+            alt="Amur leopard in its natural habitat"
+        >
+
+
+        <!-- QUICK FACTS -->
+
+        <div class="fact-box">
+
+            <p>
+                <strong>Common name:</strong>
+                Amur Leopard
+            </p>
+
+            <p>
+                <strong>Scientific name:</strong>
+                Panthera pardus orientalis
+            </p>
+
+            <p>
+                <strong>Conservation status:</strong>
+                Critically Endangered
+            </p>
+
+            <p>
+                <strong>Primary range:</strong>
+                Russian Far East and northeastern China
+            </p>
+
+            <p>
+                <strong>Diet:</strong>
+                Carnivorous
+            </p>
+
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <h2>
+            About the Amur Leopard
+        </h2>
+
+        <p>
+            Known as the world’s rarest leopard, Amur leopards were previously found in Korea and further east, but now mainly inhabit eastern Russia and northern China. Amur leopards get their name from the Amur River, a river that borders China and Russia.
+        </p>
+
+        <p>
+            In recent times, the Amur leopard population has started to increase due to the creation of a national park called the Land of the Leopard National Park, which was established in 2012. Their population was previously in the 30s but increased to around 80 in 2018. More conservation efforts are being taken so that the leopards can continue to repopulate.
+        </p>
+
+
+        <!-- HABITAT -->
+
+        <h2>
+            Habitat and Range
+        </h2>
+
+        <p>
+            Historically, the Amur leopard was found in northeastern China, southern Primorsky Krai in Russia, and the Korean Peninsula. Unfortunately, because of habitat loss and hunting, the Amur leopard’s range decreased during the 20th century.
+        </p>
+
+        <p>
+            Today, Amur leopards occupy Southwest Primorye in the Russian Far East and areas along the Russian border with Heilongjiang and Jilin provinces in northeastern China.
+        </p>
+
+       <p>
+           Habitat Characteristics:
+       </p>
+
+        <ul>
+
+            <li>
+                Temperate forests
+            </li>
+
+            <li>
+                Harsh winters with extreme cold and deep snow
+            </li>
+
+            <li>
+                Hot summers
+            </li>
+
+            <li>
+                Remote mountains
+            </li>
+
+        </ul>
+
+
+        <!-- PHYSICAL CHARACTERISTICS -->
+
+        <h2>
+            Physical Characteristics
+        </h2>
+
+        <p>
+            Amur leopards have thick fur that is a light cream color which becomes even lighter during the winter. Its fur is what distinguishes Amur leopards from other leopards.
+        </p>
+
+        <p>
+            Common physical attributes:
+        </p>
+
+        <ul>
+
+            <li>
+                Female Amur leopards weigh between 50 and 90 lbs
+            </li>
+
+            <li>
+                Male Amur leopards range from 42 to 54 inches and weigh between 70 and 100 lbs
+            </li>
+
+            <li>
+                Have large paws
+            </li>
+
+            <li>
+                Rosettes are widely spaced and bigger than the ones on other leopards
+            </li>
+
+        </ul>
+
+
+        <!-- DIET AND BEHAVIOR -->
+
+        <h2>
+            Diet and Behavior
+        </h2>
+
+        <p>
+            Wild boar, roe deer, sika deer, badgers and hares are some of the animals that make up the diet of the Amur leopard. The carnivorous species also indulges in elk, mice, and occasionally, young black bears.
+        </p>
+
+        <p>
+            Behavior:
+        </p>
+
+        <ul>
+
+            <li>
+                Hunts at nighttime
+            </li>
+
+            <li>
+                Requires large territories to avoid competing for prey
+            </li>
+
+            <li>
+                Silently stalks their prey then quickly ambushes them at speeds of up to 35 mph
+            </li>
+
+            <li>
+                Carries and hides prey so that it’s not taken by other predators in the wild
+            </li>
+
+        </ul>
+
+
+        <!-- THREATS -->
+
+        <h2>
+            Major Threats
+        </h2>
+
+        <p>
+            Their status as the world’s rarest leopard is due to the numerous threats that Amur leopards face. Changes to their habitat, as well as hazards that regularly impact their species, have caused their population to dwindle to fewer than 100 individuals.
+        </p>
+
+        <p>
+            Threats Amur Leopards Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Poaching 
+            </li>
+
+            <li>
+                Forest fires that cause habitat loss
+            </li>
+
+            <li>
+                Development that causes habitat fragmentation
+            </li>
+
+            <li>
+                Diseases such as Canine Distemper Virus (CDV)
+            </li>
+
+        </ul>
+
+
+        <!-- CONSERVATION -->
+
+        <h2>
+            Conservation Efforts
+        </h2>
+
+        <p>
+            China and Russia have both taken action to protect the Amur leopard. Since 1980, China has established many protected areas for the Amur leopard in northeastern China and has set up a captive breeding program. In addition, Russia has founded numerous nature reserves that many Amur leopards now call home.
+        </p>
+
+        <p>
+            Conservation Efforts That Have Been and Can Be Taken:
+        </p>
+
+        <ul>
+
+            <li>
+                Local communities being encouraged to report poaching activities
+            </li>
+
+            <li>
+                Taking action to restore degraded forests in the Amur leopard’s range
+            </li>
+
+            <li>
+                Farmers receiving compensation when leopards decrease the population of their livestock
+            </li>
+
+        </ul>
+
+
+        <!-- WHY IT MATTERS -->
+
+        <h2>
+            Why the Amur Leopard Matters
+        </h2>
+
+        <p>
+            As apex predators, Amur leopards are an integral part of the food chain. Their presence helps maintain balance among prey species such as deer and badgers.
+        </p>
+
+        <p>
+            Without Amur leopards, prey species could become overpopulated, causing disruptions within their ecosystem. Amur leopards also share their habitat with Amur tigers, so failing to protect their habitat could negatively impact Amur tigers as well.
+        </p>
+
+
+        <!-- CONSERVATION CHALLENGES -->
+
+        <h2>
+            Conservation Challenges
+        </h2>
+
+        <p>
+            As more of their habitat and population decreases, it has become much harder to protect the Amur leopard. These factors have made the leopards more susceptible to disease and infections.
+        </p>
+
+        <p>
+            Challenges They Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Logging
+            </li>
+
+            <li>
+                Inbreeding
+            </li>
+
+            <li>
+                Disease
+            </li>
+
+        </ul>
+
+
+        <!-- RELATED SPECIES -->
+
+        <div class="related-species">
+
+            <h2>
+                Explore More Species
+            </h2>
+
+            <p>
+                Learn about other endangered animals in the
+                Endangered Animals Encyclopedia.
+            </p>
+
+            <p>
+                <a href="black-rhino.html">
+                    Black Rhino
+                </a>
+            </p>
+
+            <p>
+                <a href="whale-shark.html">
+                    Whale Shark
+                </a>
+            </p>
+
+            <p>
+                <a href="snow-leopard.html">
+                    Snow Leopard
+                </a>
+            </p>
+
+            <a
+                class="button"
+                href="species.html"
+            >
+                View All Species
+            </a>
+
+        </div>
+
+
+        <!-- SOURCES -->
+
+        <div class="sources">
+
+            <h2>
+                Sources
+            </h2>
+
+            <p>
+                <a
+                    href="https://kids.nationalgeographic.com/animals/mammals/facts/amur-leopard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    National Geographic Kids — Amur Leopard
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.wildlifevetsinternational.org/projects/reintroduction-of-amur-leopard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Wildlife Vets International — Reintroduction of Amur Leopard
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.worldwildlife.org/resources/facts/how-fast-are-amur-leopards-and-9-other-amur-leopard-facts/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    World Wildlife Fund — How fast are Amur leopards? And 9 other Amur leopard facts
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.oneearth.org/species-of-the-week-amur-leopard/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    One Earth — Amur Leopard
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://conservewildcats.org/resources/amur-leopard-facts/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WildCats Conservation Alliance — Amur Leopard facts
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://bigcatswildcats.com/leopard/amur-leopard/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    BigCatsWildCats — Amur Leopard
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- BACK BUTTON -->
+
+        <a
+            class="button"
+            href="species.html"
+        >
+            ← Back to Species
+        </a>
+
+
+    </article>
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Endangered Animals Encyclopedia
+    </p>
+
+    <p>
+        Learn more and make a difference.
+    </p>
+
+    <p>
+
+        <a href="photo-credits.html">
+            Photo Credits
+        </a>
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

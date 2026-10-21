@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vaquita | Endangered Animals Encyclopedia</title>
+
+    <meta
+        name="description"
+        content="Learn about the vaquita, including its habitat, diet, behavior, threats, conservation efforts, and importance to marine ecosystems."
+    >
+
+    <style>
+
+        /* ==================================================
+           GENERAL PAGE STYLE
+           ================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            color: #263d2b;
+
+            line-height: 1.6;
+
+            background-image:
+                linear-gradient(
+                    rgba(28, 67, 39, 0.30),
+                    rgba(28, 67, 39, 0.30)
+                ),
+                url("images/jungle/jungle-vegetation.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* ==================================================
+           HEADER
+           ================================================== */
+
+        header {
+            background: #496f3d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.25);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* ==================================================
+           LEFT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::before {
+            content: "";
+
+            position: absolute;
+
+            left: -45px;
+
+            bottom: -65px;
+
+            width: 360px;
+
+            height: 230px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 80px 28px at 70px 75px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 26px at 125px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 70px 25px at 185px 35px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 85px 28px at 225px 85px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 180px 85px at 120px 190px,
+                    #d8edc9 0%,
+                    #d8edc9 68%,
+                    transparent 70%
+                );
+
+            transform: rotate(-12deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           RIGHT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::after {
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+
+            top: -55px;
+
+            width: 360px;
+
+            height: 240px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 85px 28px at 285px 70px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 25px at 225px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 80px 26px at 180px 90px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 90px 28px at 250px 135px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                );
+
+            transform: rotate(18deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           HEADER WILDLIFE
+           ================================================== */
+
+        .header-wildlife {
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* ==================================================
+           TOUCAN
+           ================================================== */
+
+        .toucan {
+            position: absolute;
+
+            right: 55px;
+
+            top: 28px;
+
+            width: 72px;
+
+            height: 54px;
+
+            opacity: 0.14;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 17px;
+
+            width: 34px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 50% 45% 55%;
+        }
+
+        .toucan-head {
+            position: absolute;
+
+            left: 12px;
+
+            top: 8px;
+
+            width: 27px;
+
+            height: 27px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .toucan-beak {
+            position: absolute;
+
+            left: -12px;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 16px;
+
+            background: #d8edc9;
+
+            border-radius:
+                80% 15% 15% 80%;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 27px;
+
+            width: 32px;
+
+            height: 17px;
+
+            background: #d8edc9;
+
+            border-radius:
+                10% 80% 80% 10%;
+
+            transform: rotate(22deg);
+        }
+
+        .toucan-eye {
+            position: absolute;
+
+            left: 23px;
+
+            top: 16px;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           TREE FROG
+           ================================================== */
+
+        .frog {
+            position: absolute;
+
+            left: 55px;
+
+            top: 24px;
+
+            width: 65px;
+
+            height: 55px;
+
+            opacity: 0.13;
+
+            transform: rotate(8deg);
+        }
+
+        .frog-body {
+            position: absolute;
+
+            left: 18px;
+
+            top: 15px;
+
+            width: 35px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left,
+        .frog-eye-right {
+            position: absolute;
+
+            top: 7px;
+
+            width: 15px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left {
+            left: 17px;
+        }
+
+        .frog-eye-right {
+            left: 38px;
+        }
+
+        .frog-eye-left::after,
+        .frog-eye-right::after {
+            content: "";
+
+            position: absolute;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+
+            left: 5px;
+
+            top: 5px;
+        }
+
+        .frog-leg-left,
+        .frog-leg-right {
+            position: absolute;
+
+            width: 30px;
+
+            height: 8px;
+
+            background: #d8edc9;
+
+            border-radius: 20px;
+        }
+
+        .frog-leg-left {
+            left: 0;
+
+            top: 38px;
+
+            transform: rotate(25deg);
+        }
+
+        .frog-leg-right {
+            right: 0;
+
+            top: 39px;
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* ==================================================
+           LIZARD
+           ================================================== */
+
+        .header-lizard {
+            position: absolute;
+
+            left: 205px;
+
+            bottom: 16px;
+
+            width: 75px;
+
+            height: 28px;
+
+            opacity: 0.12;
+
+            transform: rotate(-8deg);
+        }
+
+        .lizard-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 9px;
+
+            width: 35px;
+
+            height: 13px;
+
+            background: #d8edc9;
+
+            border-radius: 60%;
+        }
+
+        .lizard-head {
+            position: absolute;
+
+            left: 10px;
+
+            top: 7px;
+
+            width: 17px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 45% 45% 55%;
+        }
+
+        .lizard-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 7px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+
+            transform: rotate(18deg);
+        }
+
+        .lizard-leg {
+            position: absolute;
+
+            width: 20px;
+
+            height: 6px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+        }
+
+        .lizard-leg.one {
+            left: 25px;
+
+            top: 17px;
+
+            transform: rotate(45deg);
+        }
+
+        .lizard-leg.two {
+            left: 42px;
+
+            top: 17px;
+
+            transform: rotate(-45deg);
+        }
+
+        .lizard-eye {
+            position: absolute;
+
+            left: 14px;
+
+            top: 10px;
+
+            width: 3px;
+
+            height: 3px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           HEADER TEXT
+           ================================================== */
+
+        header h1 {
+            font-size: 42px;
+
+            margin: 0 0 10px;
+
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 19px;
+
+            margin: 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* ==================================================
+           NAVIGATION
+           ================================================== */
+
+        nav {
+            background-color: rgba(24, 58, 33, 0.97);
+
+            text-align: center;
+
+            padding: 16px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 10;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d8edc9;
+        }
+
+
+        /* ==================================================
+           BREADCRUMBS
+           ================================================== */
+
+        .breadcrumbs {
+            max-width: 1100px;
+
+            margin: 30px auto 0;
+
+            padding: 0 20px;
+
+            color: #edf4d7;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+        .breadcrumbs a {
+            color: #e2edc9;
+
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           MAIN CONTENT
+           ================================================== */
+
+        main {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 30px 20px 45px;
+        }
+
+
+        /* ==================================================
+           ARTICLE
+           ================================================== */
+
+        article {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+
+            color: #f4f5e8;
+        }
+
+
+        /* ==================================================
+           ARTICLE TITLE
+           ================================================== */
+
+        article h1 {
+            color: #e2edc9;
+
+            font-size: 40px;
+
+            margin-top: 0;
+
+            margin-bottom: 5px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .scientific-name {
+            color: #e2e8d8;
+
+            font-style: italic;
+
+            font-size: 18px;
+
+            margin-top: 0;
+        }
+
+
+        /* ==================================================
+           CONSERVATION STATUS
+           ================================================== */
+
+        .status {
+            display: inline-block;
+
+            background-color: #7b3f35;
+
+            color: white;
+
+            padding: 7px 15px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin: 10px 0 25px;
+        }
+
+
+        /* ==================================================
+           MAIN ANIMAL IMAGE
+           ================================================== */
+
+        .animal-image {
+            width: 100%;
+
+            max-height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           ARTICLE HEADINGS
+           ================================================== */
+
+        article h2 {
+            color: #e2edc9;
+
+            font-size: 29px;
+
+            margin-top: 40px;
+
+            border-bottom:
+                2px solid rgba(226, 237, 201, 0.35);
+
+            padding-bottom: 8px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.20);
+        }
+
+
+        /* ==================================================
+           ARTICLE TEXT
+           ================================================== */
+
+        article p {
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           FACT BOX
+           ================================================== */
+
+        .fact-box {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            border-left:
+                5px solid #496f3d;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin: 25px 0;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .fact-box p {
+            margin: 7px 0;
+
+            color: #3d4935;
+        }
+
+
+        /* ==================================================
+           LISTS
+           ================================================== */
+
+        article ul {
+            padding-left: 25px;
+        }
+
+        article li {
+            margin-bottom: 8px;
+
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           RELATED SPECIES
+           ================================================== */
+
+        .related-species {
+            background-color: rgba(79, 103, 58, 0.94);
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            margin-top: 40px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.30);
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.18);
+        }
+
+        .related-species h2 {
+            margin-top: 0;
+        }
+
+        .related-species a {
+            color: #e2edc9;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+        .related-species a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           BUTTONS
+           ================================================== */
+
+        .button {
+            display: inline-block;
+
+            background-color: #496f3d;
+
+            color: white !important;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            margin-top: 20px;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.20);
+        }
+
+        .button:hover {
+            background-color: #31552e;
+
+            color: white !important;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           SOURCES
+           ================================================== */
+
+        .sources {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .sources h2 {
+            margin-top: 0;
+
+            color: #31552e;
+
+            border-bottom:
+                2px solid rgba(49, 85, 46, 0.20);
+        }
+
+        .sources p {
+            color: #3d4935;
+
+            font-size: 14px;
+        }
+
+        .sources a {
+            color: #31552e;
+
+            font-weight: bold;
+        }
+
+        .sources a:hover {
+            color: #496f3d;
+        }
+
+
+        /* ==================================================
+           FOOTER
+           ================================================== */
+
+        footer {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(47, 76, 42, 0.97),
+                    rgba(73, 102, 56, 0.97)
+                );
+
+            color: #edf1df;
+
+            padding: 30px 20px;
+
+            margin-top: 0;
+
+            text-align: center !important;
+
+            box-shadow:
+                0 -4px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        footer p {
+            margin: 8px 0;
+
+            text-align: center !important;
+
+            color: #edf1df;
+        }
+
+        footer a {
+            color: #e2edc9 !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white !important;
+        }
+
+
+        /* ==================================================
+           MOBILE
+           ================================================== */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 8px;
+            }
+
+            main {
+                padding: 25px 15px 30px;
+            }
+
+            .breadcrumbs {
+                margin: 25px 15px 0;
+
+                padding: 0;
+            }
+
+            article {
+                padding: 25px 15px;
+            }
+
+            article h1 {
+                font-size: 32px;
+            }
+
+            article h2 {
+                font-size: 25px;
+            }
+
+            article p,
+            article li {
+                font-size: 16px;
+            }
+
+            .animal-image {
+                max-height: 350px;
+            }
+
+
+            /* SMALLER RAINFOREST DECORATION */
+
+            header::before {
+                width: 220px;
+
+                height: 160px;
+
+                left: -55px;
+
+                bottom: -45px;
+
+                opacity: 0.11;
+            }
+
+            header::after {
+                width: 220px;
+
+                height: 160px;
+
+                right: -55px;
+
+                top: -40px;
+
+                opacity: 0.11;
+            }
+
+            .toucan {
+                right: 15px;
+
+                top: 18px;
+
+                transform:
+                    scale(0.75)
+                    rotate(-7deg);
+
+                transform-origin: top right;
+            }
+
+            .frog {
+                left: 15px;
+
+                top: 20px;
+
+                transform:
+                    scale(0.75)
+                    rotate(8deg);
+
+                transform-origin: top left;
+            }
+
+            .header-lizard {
+                left: 50%;
+
+                bottom: 10px;
+
+                transform:
+                    translateX(-50%)
+                    scale(0.75)
+                    rotate(-8deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+     ================================================== -->
+
+<header>
+
+    <div class="header-wildlife">
+
+
+        <!-- TOUCAN -->
+
+        <div class="toucan">
+
+            <div class="toucan-tail"></div>
+
+            <div class="toucan-body"></div>
+
+            <div class="toucan-head"></div>
+
+            <div class="toucan-beak"></div>
+
+            <div class="toucan-eye"></div>
+
+        </div>
+
+
+        <!-- TREE FROG -->
+
+        <div class="frog">
+
+            <div class="frog-eye-left"></div>
+
+            <div class="frog-eye-right"></div>
+
+            <div class="frog-body"></div>
+
+            <div class="frog-leg-left"></div>
+
+            <div class="frog-leg-right"></div>
+
+        </div>
+
+
+        <!-- LIZARD -->
+
+        <div class="header-lizard">
+
+            <div class="lizard-tail"></div>
+
+            <div class="lizard-body"></div>
+
+            <div class="lizard-head"></div>
+
+            <div class="lizard-leg one"></div>
+
+            <div class="lizard-leg two"></div>
+
+            <div class="lizard-eye"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Endangered Animals Encyclopedia
+    </h1>
+
+    <p>
+        Making the world a better place one day at a time.
+    </p>
+
+</header>
+
+
+<!-- ==================================================
+     NAVIGATION
+     ================================================== -->
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="species.html">
+        Species
+    </a>
+
+    <a href="how-you-can-help.html">
+        How You Can Help
+    </a>
+
+    <a href="about-us.html">
+        About Us
+    </a>
+
+</nav>
+
+
+<!-- ==================================================
+     BREADCRUMBS
+     ================================================== -->
+
+<div class="breadcrumbs">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    &nbsp; / &nbsp;
+
+    <a href="species.html">
+        Species
+    </a>
+
+    &nbsp; / &nbsp;
+
+    Vaquita
+
+</div>
+
+
+<!-- ==================================================
+     MAIN CONTENT
+     ================================================== -->
+
+<main>
+
+    <article>
+
+
+        <!-- ARTICLE TITLE -->
+
+        <h1>
+            Vaquita
+        </h1>
+
+        <p class="scientific-name">
+            Scientific name: Phocoena sinus
+        </p>
+
+        <span class="status">
+            Critically Endangered
+        </span>
+
+
+        <!-- IMAGE -->
+
+        <img
+            class="animal-image"
+            src="images/vaquita/Vaquita2_Olson_NOAA.jpg"
+            alt="Vaquita swimming in the Gulf of California"
+        >
+
+
+        <!-- QUICK FACTS -->
+
+        <div class="fact-box">
+
+            <p>
+                <strong>Common name:</strong>
+                Vaquita
+            </p>
+
+            <p>
+                <strong>Scientific name:</strong>
+                Phocoena sinus
+            </p>
+
+            <p>
+                <strong>Conservation status:</strong>
+                Critically Endangered
+            </p>
+
+            <p>
+                <strong>Primary range:</strong>
+                Northern Gulf of California, Mexico
+            </p>
+
+            <p>
+                <strong>Diet:</strong>
+                Small fish, squid, crustaceans, and other small marine animals
+            </p>
+
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <h2>
+            About the Vaquita
+        </h2>
+
+        <p>
+            With only around 10 individuals left in the wild, vaquitas are the world’s rarest marine mammal. Vaquitas only live in the northern part of the Gulf of California, where fishing is a major source of income for locals.
+        </p>
+
+        <p>
+            Gillnets used by illegal fishing operations in Mexico’s Gulf of California often catch vaquitas accidentally, contributing to their massive decline over the past couple of years. If a gillnet ban is not fully enforced, it is believed that vaquitas will become extinct within the next few years.
+        </p>
+
+
+        <!-- HABITAT -->
+
+        <h2>
+            Habitat and Range
+        </h2>
+
+        <p>
+            Since the vaquita only lives in the northern part of the Gulf of California in Mexico, it has the smallest geographical range of any marine mammal on Earth. The majority of the vaquita population inhabits an area east of the town of San Felipe that is smaller than metropolitan Los Angeles.
+        </p>
+
+        <p>
+            This area also contains many fish and shrimp, which sadly attracts a lot of illegal fishermen. In 1993, the Mexican government created the Upper Gulf of California Biosphere Reserve to help protect the vaquita habitat.
+        </p>
+
+       <p>
+           Habitat Characteristics:
+       </p>
+
+        <ul>
+
+            <li>
+                Marine habitats
+            </li>
+           
+            <li>
+                Where fish, birds, marine mammals reside
+            </li>
+
+        </ul>
+
+
+        <!-- PHYSICAL CHARACTERISTICS -->
+
+        <h2>
+            Physical Characteristics
+        </h2>
+
+        <p>
+            At nearly 5 feet long, the vaquita is one of the smallest members of the dolphin family. Male vaquitas have larger fins but are shorter than females.
+        </p>
+
+        <p>
+            Common physical attributes:
+        </p>
+
+        <ul>
+
+            <li>
+                Rounded head with no beak
+            </li>
+
+            <li>
+                Small, strong bodies
+            </li>
+
+            <li>
+                Black patches around their eyes
+            </li>
+
+        </ul>
+
+
+        <!-- DIET AND BEHAVIOR -->
+
+        <h2>
+            Diet and Behavior
+        </h2>
+
+        <p>
+            Vaquitas consume small fish, shrimp, and squid. As shy creatures, they typically avoid boats with active engines; otherwise, they are found near the Gulf’s shore.
+        </p>
+
+        <p>
+            Behavior:
+        </p>
+
+        <ul>
+
+            <li>
+                Shy
+            </li>
+
+            <li>
+                Found alone or in pairs
+            </li>
+
+        </ul>
+
+
+        <!-- THREATS -->
+
+        <h2>
+            Major Threats
+        </h2>
+
+        <p>
+            Approximately 20% of vaquitas become entangled in gillnets intended for other species and subsequently drown. By the mid-1970s, vaquitas had been severely overfished and continue to be overfished to this day.
+        </p>
+
+        <p>
+            Threats Vaquitas Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Gillnets
+            </li>
+
+        </ul>
+
+
+        <!-- CONSERVATION -->
+
+        <h2>
+            Conservation Efforts
+        </h2>
+
+        <p>
+            The World Wildlife Fund has been urging the Mexican government to strictly enforce a ban on gillnet fisheries since 2014. It has also been seeking support from the U.S. and China to help stop the illegal totoaba trade.
+        </p>
+
+        <p>
+            Conservation Efforts That Have Been and Can Be Taken:
+        </p>
+
+        <ul>
+
+            <li>
+                Banning all gillnets through the vaquitas’ range forever
+            </li>
+
+            <li>
+                Stopping illegal fishing
+            </li>
+
+        </ul>
+
+
+        <!-- WHY IT MATTERS -->
+
+        <h2>
+            Why the Vaquita Matters
+        </h2>
+
+        <p>
+           There is currently very little knowledge about the vaquita, but scientists still recognize their importance to planet Earth. Vaquitas also help maintain balance within their ecosystem.
+        </p>
+
+        <p>
+            As both predators and prey, vaquitas are important to shark and killer whale populations. The disappearance of vaquitas would upset both of these species and cause many changes to their particular ecosystem.
+        </p>
+
+
+        <!-- CONSERVATION CHALLENGE -->
+
+        <h2>
+            Conservation Challenges
+        </h2>
+
+        <p>
+            There is a huge demand for totoaba, specifically for their swim bladders, which can sell for around $4,000 per pound. Vaquitas get caught in gill nets intended for totoaba, which contributes to their declining population.
+        </p>
+
+        <p>
+            Challenges They Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Bycatch
+            </li>
+
+        </ul>
+
+
+        <!-- RELATED SPECIES -->
+
+        <div class="related-species">
+
+            <h2>
+                Explore More Species
+            </h2>
+
+            <p>
+                Learn about other endangered animals in the
+                Endangered Animals Encyclopedia.
+            </p>
+
+            <p>
+                <a href="amur-leopard.html">
+                    Amur Leopard
+                </a>
+            </p>
+
+            <p>
+                <a href="black-rhino.html">
+                    Black Rhino
+                </a>
+            </p>
+
+            <p>
+                <a href="hawksbill-turtle.html">
+                    Hawksbill Sea Turtle
+                </a>
+            </p>
+
+            <a
+                class="button"
+                href="species.html"
+            >
+                View All Species
+            </a>
+
+        </div>
+
+
+        <!-- SOURCES -->
+
+        <div class="sources">
+
+            <h2>
+                Sources
+            </h2>
+
+            <p>
+                <a
+                    href="https://defenders.org/wildlife/vaquita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Defenders of Wildlife — Vaquita
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.fisheries.noaa.gov/species/vaquita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    NOAA Fisheries — Vaquita
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.worldwildlife.org/species/dolphin-and-porpoise/vaquita/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    World Wildlife Fund — Vaquitas
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://kids.earth.org/life-in-the-water/5-facts-about-the-vaquita/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Kids Earth — 5 Facts About the Vaquita, The World’s Most Endangered Sea Mammal
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- BACK BUTTON -->
+
+        <a
+            class="button"
+            href="species.html"
+        >
+            ← Back to Species
+        </a>
+
+
+    </article>
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Endangered Animals Encyclopedia
+    </p>
+
+    <p>
+        Learn more and make a difference.
+    </p>
+
+    <p>
+        <a href="photo-credits.html">
+            Photo Credits
+        </a>
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

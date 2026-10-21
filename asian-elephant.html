@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asian Elephant | Endangered Animals Encyclopedia</title>
+
+    <meta
+        name="description"
+        content="Learn about the Asian elephant, including its habitat, diet, behavior, threats, conservation efforts, and importance to ecosystems."
+    >
+
+    <style>
+
+        /* ==================================================
+           GENERAL PAGE STYLE
+           ================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            color: #263d2b;
+
+            line-height: 1.6;
+
+            background-image:
+                linear-gradient(
+                    rgba(28, 67, 39, 0.30),
+                    rgba(28, 67, 39, 0.30)
+                ),
+                url("images/jungle/jungle-vegetation.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* ==================================================
+           HEADER
+           ================================================== */
+
+        header {
+            background: #496f3d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.25);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* ==================================================
+           LEFT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::before {
+            content: "";
+
+            position: absolute;
+
+            left: -45px;
+
+            bottom: -65px;
+
+            width: 360px;
+
+            height: 230px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 80px 28px at 70px 75px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 26px at 125px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 70px 25px at 185px 35px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 85px 28px at 225px 85px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 180px 85px at 120px 190px,
+                    #d8edc9 0%,
+                    #d8edc9 68%,
+                    transparent 70%
+                );
+
+            transform: rotate(-12deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           RIGHT SIDE RAINFOREST FOLIAGE
+           ================================================== */
+
+        header::after {
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+
+            top: -55px;
+
+            width: 360px;
+
+            height: 240px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 85px 28px at 285px 70px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 25px at 225px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 80px 26px at 180px 90px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 90px 28px at 250px 135px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                );
+
+            transform: rotate(18deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* ==================================================
+           HEADER WILDLIFE
+           ================================================== */
+
+        .header-wildlife {
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* ==================================================
+           TOUCAN
+           ================================================== */
+
+        .toucan {
+            position: absolute;
+
+            right: 55px;
+
+            top: 28px;
+
+            width: 72px;
+
+            height: 54px;
+
+            opacity: 0.14;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 17px;
+
+            width: 34px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 50% 45% 55%;
+        }
+
+        .toucan-head {
+            position: absolute;
+
+            left: 12px;
+
+            top: 8px;
+
+            width: 27px;
+
+            height: 27px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .toucan-beak {
+            position: absolute;
+
+            left: -12px;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 16px;
+
+            background: #d8edc9;
+
+            border-radius:
+                80% 15% 15% 80%;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 27px;
+
+            width: 32px;
+
+            height: 17px;
+
+            background: #d8edc9;
+
+            border-radius:
+                10% 80% 80% 10%;
+
+            transform: rotate(22deg);
+        }
+
+        .toucan-eye {
+            position: absolute;
+
+            left: 23px;
+
+            top: 16px;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           TREE FROG
+           ================================================== */
+
+        .frog {
+            position: absolute;
+
+            left: 55px;
+
+            top: 24px;
+
+            width: 65px;
+
+            height: 55px;
+
+            opacity: 0.13;
+
+            transform: rotate(8deg);
+        }
+
+        .frog-body {
+            position: absolute;
+
+            left: 18px;
+
+            top: 15px;
+
+            width: 35px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left,
+        .frog-eye-right {
+            position: absolute;
+
+            top: 7px;
+
+            width: 15px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left {
+            left: 17px;
+        }
+
+        .frog-eye-right {
+            left: 38px;
+        }
+
+        .frog-eye-left::after,
+        .frog-eye-right::after {
+            content: "";
+
+            position: absolute;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+
+            left: 5px;
+
+            top: 5px;
+        }
+
+        .frog-leg-left,
+        .frog-leg-right {
+            position: absolute;
+
+            width: 30px;
+
+            height: 8px;
+
+            background: #d8edc9;
+
+            border-radius: 20px;
+        }
+
+        .frog-leg-left {
+            left: 0;
+
+            top: 38px;
+
+            transform: rotate(25deg);
+        }
+
+        .frog-leg-right {
+            right: 0;
+
+            top: 39px;
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* ==================================================
+           LIZARD
+           ================================================== */
+
+        .header-lizard {
+            position: absolute;
+
+            left: 205px;
+
+            bottom: 16px;
+
+            width: 75px;
+
+            height: 28px;
+
+            opacity: 0.12;
+
+            transform: rotate(-8deg);
+        }
+
+        .lizard-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 9px;
+
+            width: 35px;
+
+            height: 13px;
+
+            background: #d8edc9;
+
+            border-radius: 60%;
+        }
+
+        .lizard-head {
+            position: absolute;
+
+            left: 10px;
+
+            top: 7px;
+
+            width: 17px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 45% 45% 55%;
+        }
+
+        .lizard-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 7px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+
+            transform: rotate(18deg);
+        }
+
+        .lizard-leg {
+            position: absolute;
+
+            width: 20px;
+
+            height: 6px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+        }
+
+        .lizard-leg.one {
+            left: 25px;
+
+            top: 17px;
+
+            transform: rotate(45deg);
+        }
+
+        .lizard-leg.two {
+            left: 42px;
+
+            top: 17px;
+
+            transform: rotate(-45deg);
+        }
+
+        .lizard-eye {
+            position: absolute;
+
+            left: 14px;
+
+            top: 10px;
+
+            width: 3px;
+
+            height: 3px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* ==================================================
+           HEADER TEXT
+           ================================================== */
+
+        header h1 {
+            font-size: 42px;
+
+            margin: 0 0 10px;
+
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 19px;
+
+            margin: 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* ==================================================
+           NAVIGATION
+           ================================================== */
+
+        nav {
+            background-color: rgba(24, 58, 33, 0.97);
+
+            text-align: center;
+
+            padding: 16px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 10;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d8edc9;
+        }
+
+
+        /* ==================================================
+           BREADCRUMBS
+           ================================================== */
+
+        .breadcrumbs {
+            max-width: 1100px;
+
+            margin: 30px auto 0;
+
+            padding: 0 20px;
+
+            color: #edf4d7;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+        .breadcrumbs a {
+            color: #e2edc9;
+
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           MAIN CONTENT
+           ================================================== */
+
+        main {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 30px 20px 45px;
+        }
+
+
+        /* ==================================================
+           ARTICLE
+           ================================================== */
+
+        article {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+
+            color: #f4f5e8;
+        }
+
+
+        /* ==================================================
+           ARTICLE TITLE
+           ================================================== */
+
+        article h1 {
+            color: #e2edc9;
+
+            font-size: 40px;
+
+            margin-top: 0;
+
+            margin-bottom: 5px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .scientific-name {
+            color: #e2e8d8;
+
+            font-style: italic;
+
+            font-size: 18px;
+
+            margin-top: 0;
+        }
+
+
+        /* ==================================================
+           CONSERVATION STATUS
+           ================================================== */
+
+        .status {
+            display: inline-block;
+
+            background-color: #7b3f35;
+
+            color: white;
+
+            padding: 7px 15px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin: 10px 0 25px;
+        }
+
+
+        /* ==================================================
+           MAIN ANIMAL IMAGE
+           ================================================== */
+
+        .animal-image {
+            width: 100%;
+
+            max-height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin-bottom: 30px;
+
+            box-shadow:
+                0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           ARTICLE HEADINGS
+           ================================================== */
+
+        article h2 {
+            color: #e2edc9;
+
+            font-size: 29px;
+
+            margin-top: 40px;
+
+            border-bottom:
+                2px solid rgba(226, 237, 201, 0.35);
+
+            padding-bottom: 8px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.20);
+        }
+
+
+        /* ==================================================
+           ARTICLE TEXT
+           ================================================== */
+
+        article p {
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           FACT BOX
+           ================================================== */
+
+        .fact-box {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            border-left:
+                5px solid #496f3d;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin: 25px 0;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .fact-box p {
+            margin: 7px 0;
+
+            color: #3d4935;
+        }
+
+
+        /* ==================================================
+           LISTS
+           ================================================== */
+
+        article ul {
+            padding-left: 25px;
+        }
+
+        article li {
+            margin-bottom: 8px;
+
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           RELATED SPECIES
+           ================================================== */
+
+        .related-species {
+            background-color: rgba(79, 103, 58, 0.94);
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            margin-top: 40px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.30);
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.18);
+        }
+
+        .related-species h2 {
+            margin-top: 0;
+        }
+
+        .related-species a {
+            color: #e2edc9;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+        .related-species a:hover {
+            color: white;
+        }
+
+
+        /* ==================================================
+           BUTTONS
+           ================================================== */
+
+        .button {
+            display: inline-block;
+
+            background-color: #496f3d;
+
+            color: white !important;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            margin-top: 20px;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.20);
+        }
+
+        .button:hover {
+            background-color: #31552e;
+
+            color: white !important;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* ==================================================
+           SOURCES
+           ================================================== */
+
+        .sources {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+            border-radius: 10px;
+
+            font-size: 14px;
+
+            color: #3d4935;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .sources h2 {
+            margin-top: 0;
+
+            color: #31552e;
+
+            border-bottom:
+                2px solid rgba(49, 85, 46, 0.20);
+        }
+
+        .sources p {
+            color: #3d4935;
+
+            font-size: 14px;
+        }
+
+        .sources a {
+            color: #31552e;
+
+            font-weight: bold;
+        }
+
+        .sources a:hover {
+            color: #496f3d;
+        }
+
+
+        /* ==================================================
+           FOOTER
+           ================================================== */
+
+        footer {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(47, 76, 42, 0.97),
+                    rgba(73, 102, 56, 0.97)
+                );
+
+            color: #edf1df;
+
+            padding: 30px 20px;
+
+            margin-top: 0;
+
+            text-align: center !important;
+
+            box-shadow:
+                0 -4px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        footer p {
+            margin: 8px 0;
+
+            text-align: center !important;
+
+            color: #edf1df;
+        }
+
+        footer a {
+            color: #e2edc9 !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white !important;
+        }
+
+
+        /* ==================================================
+           MOBILE
+           ================================================== */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 8px;
+            }
+
+            main {
+                padding: 25px 15px 30px;
+            }
+
+            .breadcrumbs {
+                margin: 25px 15px 0;
+
+                padding: 0;
+            }
+
+            article {
+                padding: 25px 15px;
+            }
+
+            article h1 {
+                font-size: 32px;
+            }
+
+            article h2 {
+                font-size: 25px;
+            }
+
+            article p,
+            article li {
+                font-size: 16px;
+            }
+
+            .animal-image {
+                max-height: 350px;
+            }
+
+
+            /* SMALLER RAINFOREST DECORATION */
+
+            header::before {
+                width: 220px;
+
+                height: 160px;
+
+                left: -55px;
+
+                bottom: -45px;
+
+                opacity: 0.11;
+            }
+
+            header::after {
+                width: 220px;
+
+                height: 160px;
+
+                right: -55px;
+
+                top: -40px;
+
+                opacity: 0.11;
+            }
+
+            .toucan {
+                right: 15px;
+
+                top: 18px;
+
+                transform:
+                    scale(0.75)
+                    rotate(-7deg);
+
+                transform-origin: top right;
+            }
+
+            .frog {
+                left: 15px;
+
+                top: 20px;
+
+                transform:
+                    scale(0.75)
+                    rotate(8deg);
+
+                transform-origin: top left;
+            }
+
+            .header-lizard {
+                left: 50%;
+
+                bottom: 10px;
+
+                transform:
+                    translateX(-50%)
+                    scale(0.75)
+                    rotate(-8deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+     ================================================== -->
+
+<header>
+
+    <div class="header-wildlife">
+
+
+        <!-- TOUCAN -->
+
+        <div class="toucan">
+
+            <div class="toucan-tail"></div>
+
+            <div class="toucan-body"></div>
+
+            <div class="toucan-head"></div>
+
+            <div class="toucan-beak"></div>
+
+            <div class="toucan-eye"></div>
+
+        </div>
+
+
+        <!-- TREE FROG -->
+
+        <div class="frog">
+
+            <div class="frog-eye-left"></div>
+
+            <div class="frog-eye-right"></div>
+
+            <div class="frog-body"></div>
+
+            <div class="frog-leg-left"></div>
+
+            <div class="frog-leg-right"></div>
+
+        </div>
+
+
+        <!-- LIZARD -->
+
+        <div class="header-lizard">
+
+            <div class="lizard-tail"></div>
+
+            <div class="lizard-body"></div>
+
+            <div class="lizard-head"></div>
+
+            <div class="lizard-leg one"></div>
+
+            <div class="lizard-leg two"></div>
+
+            <div class="lizard-eye"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Endangered Animals Encyclopedia
+    </h1>
+
+    <p>
+        Making the world a better place one day at a time.
+    </p>
+
+</header>
+
+
+<!-- ==================================================
+     NAVIGATION
+     ================================================== -->
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="species.html">
+        Species
+    </a>
+
+    <a href="how-you-can-help.html">
+        How You Can Help
+    </a>
+
+    <a href="about-us.html">
+        About Us
+    </a>
+
+</nav>
+
+
+<!-- ==================================================
+     BREADCRUMBS
+     ================================================== -->
+
+<div class="breadcrumbs">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    &nbsp; / &nbsp;
+
+    <a href="species.html">
+        Species
+    </a>
+
+    &nbsp; / &nbsp;
+
+    Asian Elephant
+
+</div>
+
+
+<!-- ==================================================
+     MAIN CONTENT
+     ================================================== -->
+
+<main>
+
+    <article>
+
+
+        <!-- ARTICLE TITLE -->
+
+        <h1>
+            Asian Elephant
+        </h1>
+
+        <p class="scientific-name">
+            Scientific name: Elephas maximus
+        </p>
+
+        <span class="status">
+            Endangered
+        </span>
+
+
+        <!-- IMAGE -->
+
+        <img
+            class="animal-image"
+            src="images/asian-elephant/Asian_Elephant_(Elephas_maximus)_(7851686088).jpg"
+            alt="Asian elephant in its natural habitat"
+        >
+
+
+        <!-- QUICK FACTS -->
+
+        <div class="fact-box">
+
+            <p>
+                <strong>Common name:</strong>
+                Asian Elephant
+            </p>
+
+            <p>
+                <strong>Scientific name:</strong>
+                Elephas maximus
+            </p>
+
+            <p>
+                <strong>Conservation status:</strong>
+                Endangered
+            </p>
+
+            <p>
+                <strong>Primary range:</strong>
+                South and Southeast Asia
+            </p>
+
+            <p>
+                <strong>Diet:</strong>
+                Grasses, leaves, bark, roots, fruits, and other vegetation
+            </p>
+
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <h2>
+            About the Asian Elephant
+        </h2>
+
+        <p>
+            The Asian elephant is the largest land mammal in Asia. Asian elephants currently inhabit 13 countries across South and Southeast Asia. There are several recognized populations or subspecies of Asian elephants, including the Bornean, Indian, Sri Lankan, and Sumatran elephants.
+        </p>
+
+        <p>
+            It is estimated that there are now only 30,000–50,000 Asian elephants remaining. This decline is largely due to widespread habitat destruction and poaching.
+        </p>
+
+
+        <!-- HABITAT -->
+
+        <h2>
+            Habitat and Range
+        </h2>
+
+        <p>
+            Bangladesh, Bhutan, Cambodia, China, India, Indonesia, Laos, Malaysia, Myanmar, Nepal, Sri Lanka, Thailand, and Vietnam are the countries that make up the range of Asian elephants. This species tends to reside in dry to wet forests and grasslands.
+        </p>
+
+        <p>
+            The size of Asian elephants’ home ranges varies depending on the food available and the presence of other elephants in the area. Usually, elephants inhabit areas that are close to a source of fresh water because they need to drink at least once a day.
+        </p>
+
+       <p>
+           Habitat Characteristics:
+       </p>
+
+        <ul>
+
+            <li>
+                Open spaces
+            </li>
+
+            <li>
+                Has a big variety of plants
+            </li>
+
+            <li>
+                Where there’s enough vegetation and water sources to meet their needs
+            </li>
+
+        </ul>
+
+
+        <!-- PHYSICAL CHARACTERISTICS -->
+
+        <h2>
+            Physical Characteristics
+        </h2>
+
+        <p>
+            Asian elephants stand between 6.5 and 11.5 feet tall and weigh approximately 11,000 pounds. They have gray skin and large brains that weigh between 9 and 13 pounds.
+        </p>
+
+        <p>
+            Common physical attributes:
+        </p>
+
+        <ul>
+
+            <li>
+                Brown to reddish hair on their bodies
+            </li>
+
+            <li>
+                Large ears
+            </li>
+
+            <li>
+                Smaller than African elephants
+            </li>
+
+            <li>
+                Six sets of teeth, all of which are present from birth
+            </li>
+
+            <li>
+                Tusks
+            </li>
+
+        </ul>
+
+
+        <!-- DIET AND BEHAVIOR -->
+
+        <h2>
+            Diet and Behavior
+        </h2>
+
+        <p>
+            As herbivores, Asian elephants feed mainly on grasses but also eat a lot of tree bark and leaves. Since elephants absorb only about 44 percent of what they consume, they have to eat massive amounts of food—roughly 165 to 330 pounds per day—and drink nearly 50 gallons of water per day.
+        </p>
+
+        <p>
+            Behavior:
+        </p>
+
+        <ul>
+
+            <li>
+                Spends about 75% of the day eating or searching for food and water
+            </li>
+
+            <li>
+                Tendency to rest during the hottest hours of the day
+            </li>
+
+            <li>
+                Bananas and sugar cane are also a favored food, which causes conflict with farmers
+            </li>
+
+        </ul>
+
+
+        <!-- THREATS -->
+
+        <h2>
+            Major Threats
+        </h2>
+
+        <p>
+            Asian elephants have faced many threats over the years, which have caused their numbers to dwindle. Sumatran elephants are especially at risk from these threats, and currently, there are only 1,200 individuals remaining on Earth.
+        </p>
+
+        <p>
+            Threats Asian Elephants Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Poaching and illegal wildlife trade
+            </li>
+
+            <li>
+                Human-elephant conflict
+            </li>
+
+            <li>
+                Genetic threat from extinction of small populations
+            </li>
+
+            <li>
+                Habitat loss
+            </li>
+
+        </ul>
+
+
+        <!-- CONSERVATION -->
+
+        <h2>
+            Conservation Efforts
+        </h2>
+
+        <p>
+            Organizations around the world are taking action to protect Asian elephants. The WWF is focusing on reducing human-elephant conflict, protecting elephant habitat, and securing healthy forests. In addition, the Conservation Ecology Center has been working with experts to implement new strategies that will help reduce these conflicts.
+        </p>
+
+        <p>
+            Conservation Efforts That Have Been and Can Be Taken:
+        </p>
+
+        <ul>
+
+            <li>
+                Conducting anti poaching patrols
+            </li>
+
+            <li>
+                Understanding wild elephant populations and health
+            </li>
+
+            <li>
+                Tracking wild elephants and their movements across Asia
+            </li>
+
+        </ul>
+
+
+        <!-- WHY IT MATTERS -->
+
+        <h2>
+            Why the Asian Elephant Matters
+        </h2>
+
+        <p>
+            Unknown to most, the presence of Asian elephants benefits other wildlife on our planet. Asian elephants create paths through the dense forests they travel through, making it easier for other species to access these areas.
+        </p>
+
+        <p>
+            Making an effort to protect Asian elephants and their habitats also helps protect the other animals that coexist with them.
+        </p>
+
+
+        <!-- CONSERVATION CHALLENGES -->
+
+        <h2>
+            Conservation Challenges
+        </h2>
+
+        <p>
+            Unfortunately, Asian elephants face numerous threats that make it difficult to preserve their population. These threats not only negatively impact their habitat but also put them in further contact with humans.
+        </p>
+
+        <p>
+            Challenges They Face:
+        </p>
+
+        <ul>
+
+            <li>
+                Roads and infrastructure 
+            </li>
+
+            <li>
+                Human-elephant conflict
+            </li>
+
+            <li>
+                Illegal wildlife trade
+            </li>
+
+            <li>
+                Climate change
+            </li>
+
+            <li>
+                Slow reproduction
+            </li>
+
+        </ul>
+
+
+        <!-- RELATED SPECIES -->
+
+        <div class="related-species">
+
+            <h2>
+                Explore More Species
+            </h2>
+
+            <p>
+                Learn about other endangered animals in the
+                Endangered Animals Encyclopedia.
+            </p>
+
+            <p>
+                <a href="giant-panda.html">
+                    Giant Panda
+                </a>
+            </p>
+
+            <p>
+                <a href="pangolin.html">
+                    Pangolin
+                </a>
+            </p>
+
+            <p>
+                <a href="black-rhino.html">
+                    Black Rhino
+                </a>
+            </p>
+
+            <a
+                class="button"
+                href="species.html"
+            >
+                View All Species
+            </a>
+
+        </div>
+
+
+        <!-- SOURCES -->
+
+        <div class="sources">
+
+            <h2>
+                Sources
+            </h2>
+
+            <p>
+                <a
+                    href="https://internationalelephantproject.org/elephants/elephant-facts/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    International Elephant Project — Asian Elephant Facts
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.internationalelephantproject.org/elephants/elephant-threats/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    International Elephant Project — Threats Facing Asian Elephants
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://nationalzoo.si.edu/animals/asian-elephant"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Smithsonian’s National Zoo & Conservation Biology Institute — Asian Elephant
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://nationalzoo.si.edu/conservation-ecology-center/asian-elephant-conservation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Smithsonian’s National Zoo & Conservation Biology Institute — Asian Elephant Conservation
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.earthday.org/asian-elephant/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    EarthDay.Org — Asian Elephant
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.worldwildlife.org/species/elephant/asian-elephant/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    World Widlife Fund — Asian Elephants
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://www.samuielephanthaven.org/challenges-asian-elephants/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Samui Elephant Haven — Challenges Facing Asia’s Endangered Elephants in 2026
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- BACK BUTTON -->
+
+        <a
+            class="button"
+            href="species.html"
+        >
+            ← Back to Species
+        </a>
+
+
+    </article>
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Endangered Animals Encyclopedia
+    </p>
+
+    <p>
+        Learn more and make a difference.
+    </p>
+
+    <p>
+
+        <a href="photo-credits.html">
+            Photo Credits
+        </a>
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
