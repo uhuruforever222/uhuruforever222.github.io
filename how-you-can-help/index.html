@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>How You Can Help | Endangered Animals Encyclopedia</title>
+
+    <style>
+
+        /* GENERAL PAGE STYLE */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            color: #263d2b;
+
+            line-height: 1.6;
+
+            /* CONTINUOUS JUNGLE BACKGROUND */
+
+            background-image:
+                linear-gradient(
+                    rgba(28, 67, 39, 0.30),
+                    rgba(28, 67, 39, 0.30)
+                ),
+                url("images/jungle/jungle-vegetation.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+        }
+
+
+        /* HEADER */
+
+        header {
+            background: #496f3d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.25);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* LEFT HEADER FOLIAGE */
+
+        header::before {
+            content: "";
+
+            position: absolute;
+
+            left: -45px;
+
+            bottom: -65px;
+
+            width: 360px;
+
+            height: 230px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 80px 28px at 70px 75px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 26px at 125px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 70px 25px at 185px 35px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 85px 28px at 225px 85px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 180px 85px at 120px 190px,
+                    #d8edc9 0%,
+                    #d8edc9 68%,
+                    transparent 70%
+                );
+
+            transform: rotate(-12deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* RIGHT HEADER FOLIAGE */
+
+        header::after {
+            content: "";
+
+            position: absolute;
+
+            right: -45px;
+
+            top: -55px;
+
+            width: 360px;
+
+            height: 240px;
+
+            opacity: 0.15;
+
+            pointer-events: none;
+
+            background:
+
+                radial-gradient(
+                    ellipse 85px 28px at 285px 70px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 75px 25px at 225px 45px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 80px 26px at 180px 90px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                ),
+
+                radial-gradient(
+                    ellipse 90px 28px at 250px 135px,
+                    #d8edc9 0%,
+                    #d8edc9 70%,
+                    transparent 72%
+                );
+
+            transform: rotate(18deg);
+
+            filter:
+                drop-shadow(
+                    0 2px 2px rgba(0, 0, 0, 0.12)
+                );
+        }
+
+
+        /* HEADER WILDLIFE */
+
+        .header-wildlife {
+            position: absolute;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* TOUCAN */
+
+        .toucan {
+            position: absolute;
+
+            right: 55px;
+
+            top: 28px;
+
+            width: 72px;
+
+            height: 54px;
+
+            opacity: 0.14;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 17px;
+
+            width: 34px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 50% 45% 55%;
+        }
+
+        .toucan-head {
+            position: absolute;
+
+            left: 12px;
+
+            top: 8px;
+
+            width: 27px;
+
+            height: 27px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .toucan-beak {
+            position: absolute;
+
+            left: -12px;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 16px;
+
+            background: #d8edc9;
+
+            border-radius:
+                80% 15% 15% 80%;
+
+            transform: rotate(-7deg);
+        }
+
+        .toucan-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 27px;
+
+            width: 32px;
+
+            height: 17px;
+
+            background: #d8edc9;
+
+            border-radius:
+                10% 80% 80% 10%;
+
+            transform: rotate(22deg);
+        }
+
+        .toucan-eye {
+            position: absolute;
+
+            left: 23px;
+
+            top: 16px;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* TREE FROG */
+
+        .frog {
+            position: absolute;
+
+            left: 55px;
+
+            top: 24px;
+
+            width: 65px;
+
+            height: 55px;
+
+            opacity: 0.13;
+
+            transform: rotate(8deg);
+        }
+
+        .frog-body {
+            position: absolute;
+
+            left: 18px;
+
+            top: 15px;
+
+            width: 35px;
+
+            height: 30px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left,
+        .frog-eye-right {
+            position: absolute;
+
+            top: 7px;
+
+            width: 15px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius: 50%;
+        }
+
+        .frog-eye-left {
+            left: 17px;
+        }
+
+        .frog-eye-right {
+            left: 38px;
+        }
+
+        .frog-eye-left::after,
+        .frog-eye-right::after {
+            content: "";
+
+            position: absolute;
+
+            width: 4px;
+
+            height: 4px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+
+            left: 5px;
+
+            top: 5px;
+        }
+
+        .frog-leg-left,
+        .frog-leg-right {
+            position: absolute;
+
+            width: 30px;
+
+            height: 8px;
+
+            background: #d8edc9;
+
+            border-radius: 20px;
+        }
+
+        .frog-leg-left {
+            left: 0;
+
+            top: 38px;
+
+            transform: rotate(25deg);
+        }
+
+        .frog-leg-right {
+            right: 0;
+
+            top: 39px;
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* LIZARD */
+
+        .header-lizard {
+            position: absolute;
+
+            left: 205px;
+
+            bottom: 16px;
+
+            width: 75px;
+
+            height: 28px;
+
+            opacity: 0.12;
+
+            transform: rotate(-8deg);
+        }
+
+        .lizard-body {
+            position: absolute;
+
+            left: 22px;
+
+            top: 9px;
+
+            width: 35px;
+
+            height: 13px;
+
+            background: #d8edc9;
+
+            border-radius: 60%;
+        }
+
+        .lizard-head {
+            position: absolute;
+
+            left: 10px;
+
+            top: 7px;
+
+            width: 17px;
+
+            height: 15px;
+
+            background: #d8edc9;
+
+            border-radius:
+                55% 45% 45% 55%;
+        }
+
+        .lizard-tail {
+            position: absolute;
+
+            right: 0;
+
+            top: 11px;
+
+            width: 31px;
+
+            height: 7px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+
+            transform: rotate(18deg);
+        }
+
+        .lizard-leg {
+            position: absolute;
+
+            width: 20px;
+
+            height: 6px;
+
+            background: #d8edc9;
+
+            border-radius: 100%;
+        }
+
+        .lizard-leg.one {
+            left: 25px;
+
+            top: 17px;
+
+            transform: rotate(45deg);
+        }
+
+        .lizard-leg.two {
+            left: 42px;
+
+            top: 17px;
+
+            transform: rotate(-45deg);
+        }
+
+        .lizard-eye {
+            position: absolute;
+
+            left: 14px;
+
+            top: 10px;
+
+            width: 3px;
+
+            height: 3px;
+
+            background: #496f3d;
+
+            border-radius: 50%;
+        }
+
+
+        /* HEADER TEXT */
+
+        header h1 {
+            font-size: 42px;
+
+            margin: 0 0 10px;
+
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 19px;
+
+            margin: 0;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: rgba(24, 58, 33, 0.97);
+
+            text-align: center;
+
+            padding: 16px;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 10;
+
+            box-shadow:
+                0 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d8edc9;
+        }
+
+
+        /* HERO SECTION */
+
+        .hero {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            color: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+
+            margin: 45px auto;
+
+            max-width: 1100px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero h2 {
+            color: #e2edc9;
+
+            font-size: 38px;
+
+            margin-top: 0;
+
+            margin-bottom: 15px;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero p {
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            font-size: 18px;
+
+            color: #f0f2e5;
+        }
+
+
+        /* MAIN CONTENT */
+
+        main {
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 0 20px 45px;
+        }
+
+
+        /* CONTENT SECTIONS */
+
+        section {
+            background-color: rgba(67, 91, 49, 0.94);
+
+            padding: 35px;
+
+            margin-bottom: 45px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(213, 226, 186, 0.35);
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+
+            color: #f4f5e8;
+        }
+
+        section h2 {
+            color: #e2edc9;
+
+            text-align: center;
+
+            font-size: 30px;
+
+            margin-top: 0;
+
+            text-shadow:
+                1px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* INTRODUCTION */
+
+        .introduction p {
+            max-width: 850px;
+
+            margin: 15px auto;
+
+            text-align: center;
+
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* HELP CARDS */
+
+        .help-container {
+            display: flex;
+
+            gap: 25px;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            margin-top: 25px;
+        }
+
+        .help-card {
+            background-color: rgba(226, 224, 190, 0.97);
+
+            width: 280px;
+
+            min-height: 250px;
+
+            padding: 25px;
+
+            border-radius: 16px;
+
+            border:
+                1px solid rgba(56, 82, 43, 0.35);
+
+            box-shadow:
+                0 7px 18px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+        .help-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 14px 28px rgba(0, 0, 0, 0.30);
+        }
+
+        .help-card h3 {
+            color: #31552e;
+
+            font-size: 23px;
+
+            margin-top: 5px;
+
+            margin-bottom: 10px;
+        }
+
+        .help-card p {
+            color: #3d4935;
+
+            font-size: 16px;
+
+            margin: 0;
+        }
+
+
+        /* ACTION SECTION */
+
+        .action {
+            background-color: rgba(79, 103, 58, 0.94);
+        }
+
+        .action p {
+            max-width: 850px;
+
+            margin: 15px auto;
+
+            text-align: center;
+
+            color: #f0f2e5;
+
+            font-size: 17px;
+        }
+
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+
+            background-color: #496f3d;
+
+            color: white;
+
+            padding: 14px 28px;
+
+            text-decoration: none;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            margin-top: 10px;
+
+            transition: 0.3s ease;
+
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.20);
+        }
+
+        .button:hover {
+            background-color: #31552e;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+
+        /* JOIN THE EFFORT */
+
+        .join-effort {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(40, 71, 39, 0.97),
+                    rgba(68, 98, 51, 0.96),
+                    rgba(86, 111, 58, 0.94)
+                );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 55px 35px;
+        }
+
+        .join-effort h2 {
+            color: #edf4d7;
+
+            font-size: 34px;
+        }
+
+        .join-effort p {
+            max-width: 800px;
+
+            margin: 15px auto 25px;
+
+            color: #f2f4e8;
+
+            font-size: 17px;
+        }
+
+        .join-effort .button {
+            background-color: #e2e0be;
+
+            color: #31552e;
+        }
+
+        .join-effort .button:hover {
+            background-color: #f0efda;
+
+            color: #203b27;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(47, 76, 42, 0.97),
+                    rgba(73, 102, 56, 0.97)
+                );
+
+            color: #edf1df;
+
+            padding: 30px 20px;
+
+            margin-top: 0;
+
+            text-align: center !important;
+
+            box-shadow:
+                0 -4px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        footer p {
+            margin: 8px 0;
+
+            text-align: center !important;
+
+            color: #edf1df;
+        }
+
+        footer a {
+            color: #e2edc9 !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: white !important;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 8px;
+            }
+
+            main {
+                padding: 0 15px 30px;
+            }
+
+            .hero {
+                margin: 30px 15px;
+
+                padding: 50px 20px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 25px 15px;
+
+                margin-bottom: 30px;
+            }
+
+            .help-card {
+                width: 100%;
+
+                max-width: 350px;
+            }
+
+
+            /* SMALLER HEADER DECORATION */
+
+            header::before {
+                width: 220px;
+
+                height: 160px;
+
+                left: -55px;
+
+                bottom: -45px;
+
+                opacity: 0.11;
+            }
+
+            header::after {
+                width: 220px;
+
+                height: 160px;
+
+                right: -55px;
+
+                top: -40px;
+
+                opacity: 0.11;
+            }
+
+            .toucan {
+                right: 15px;
+
+                top: 18px;
+
+                transform:
+                    scale(0.75)
+                    rotate(-7deg);
+
+                transform-origin: top right;
+            }
+
+            .frog {
+                left: 15px;
+
+                top: 20px;
+
+                transform:
+                    scale(0.75)
+                    rotate(8deg);
+
+                transform-origin: top left;
+            }
+
+            .header-lizard {
+                left: 50%;
+
+                bottom: 10px;
+
+                transform:
+                    translateX(-50%)
+                    scale(0.75)
+                    rotate(-8deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="header-wildlife">
+
+
+        <!-- TOUCAN -->
+
+        <div class="toucan">
+
+            <div class="toucan-tail"></div>
+
+            <div class="toucan-body"></div>
+
+            <div class="toucan-head"></div>
+
+            <div class="toucan-beak"></div>
+
+            <div class="toucan-eye"></div>
+
+        </div>
+
+
+        <!-- TREE FROG -->
+
+        <div class="frog">
+
+            <div class="frog-eye-left"></div>
+
+            <div class="frog-eye-right"></div>
+
+            <div class="frog-body"></div>
+
+            <div class="frog-leg-left"></div>
+
+            <div class="frog-leg-right"></div>
+
+        </div>
+
+
+        <!-- LIZARD -->
+
+        <div class="header-lizard">
+
+            <div class="lizard-tail"></div>
+
+            <div class="lizard-body"></div>
+
+            <div class="lizard-head"></div>
+
+            <div class="lizard-leg one"></div>
+
+            <div class="lizard-leg two"></div>
+
+            <div class="lizard-eye"></div>
+
+        </div>
+
+    </div>
+
+
+    <h1>
+        Endangered Animals Encyclopedia
+    </h1>
+
+    <p>
+        Making the world a better place one day at a time.
+    </p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="species.html">
+        Species
+    </a>
+
+    <a href="how-you-can-help.html">
+        How You Can Help
+    </a>
+
+    <a href="about-us.html">
+        About Us
+    </a>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<div class="hero">
+
+    <h2>
+        How You Can Help
+    </h2>
+
+    <p>
+        Many animals around the world are currently endangered.
+        Protecting wildlife and the environment can make a meaningful
+        difference for animals, ecosystems, and future generations.
+    </p>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<main>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="introduction">
+
+        <h2>
+            Everything Counts
+        </h2>
+
+        <p>
+            Helping endangered wildlife can be as simple as reducing
+            waste and conserving resources or as involved as supporting
+            conservation organizations. Every positive choice can
+            contribute to a healthier environment and a safer future
+            for endangered animals.
+        </p>
+
+        <p>
+            Learning about wildlife is also an important first step.
+            Understanding the challenges animals face can help people
+            make better decisions and become more involved in protecting
+            the natural world.
+        </p>
+
+    </section>
+
+
+    <!-- WAYS TO HELP -->
+
+    <section>
+
+        <h2>
+            Lend a Helping Hand
+        </h2>
+
+        <div class="help-container">
+
+
+            <!-- PREVENT WASTE -->
+
+            <article class="help-card">
+
+                <h3>
+                    Prevent Waste
+                </h3>
+
+                <p>
+                    Reduce unnecessary waste by reusing materials,
+                    recycling when possible, and choosing digital
+                    alternatives to paper products.
+                </p>
+
+            </article>
+
+
+            <!-- PROTECT ENVIRONMENT -->
+
+            <article class="help-card">
+
+                <h3>
+                    Protect the Environment
+                </h3>
+
+                <p>
+                    Planting native trees, cleaning up parks and beaches,
+                    and keeping litter out of natural areas can help
+                    create safer habitats for wildlife.
+                </p>
+
+            </article>
+
+
+            <!-- SAVE WATER -->
+
+            <article class="help-card">
+
+                <h3>
+                    Limit Water Usage
+                </h3>
+
+                <p>
+                    Conserving water helps protect rivers, wetlands,
+                    forests, and other habitats that animals depend on
+                    for food and shelter.
+                </p>
+
+            </article>
+
+
+            <!-- ENERGY -->
+
+            <article class="help-card">
+
+                <h3>
+                    Minimize Energy Use
+                </h3>
+
+                <p>
+                    Using energy efficiently, reducing unnecessary
+                    travel, and choosing lower-emission transportation
+                    can help reduce pollution and environmental impacts.
+                </p>
+
+            </article>
+
+
+            <!-- EDUCATION -->
+
+            <article class="help-card">
+
+                <h3>
+                    Educate Yourself
+                </h3>
+
+                <p>
+                    Learning about endangered animals and the threats
+                    they face can help people make informed choices and
+                    encourage others to care about wildlife.
+                </p>
+
+            </article>
+
+
+            <!-- CONSERVATION -->
+
+            <article class="help-card">
+
+                <h3>
+                    Support Conservation
+                </h3>
+
+                <p>
+                    Supporting reputable conservation organizations,
+                    volunteering, or participating in local environmental
+                    projects can help protect animals and their habitats.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- EVERYDAY ACTION -->
+
+    <section class="action">
+
+        <h2>
+            Keep Making an Impact
+        </h2>
+
+        <p>
+            Protecting endangered animals and the environment does not
+            have to happen all at once. Small actions repeated over time
+            can contribute to meaningful change.
+        </p>
+
+        <p>
+            Whether you reduce waste, conserve resources, learn about
+            wildlife, or help with conservation efforts, your choices
+            can contribute to protecting the natural world.
+        </p>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="join-effort">
+
+        <h2>
+            Join the Effort
+        </h2>
+
+        <p>
+            Take the next step by learning more about endangered animals,
+            their habitats, and the conservation challenges they face.
+        </p>
+
+        <a
+            class="button"
+            href="species.html"
+        >
+            Discover Endangered Species
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Endangered Animals Encyclopedia
+    </p>
+
+    <p>
+        Learn more and make a difference.
+    </p>
+
+    <p>
+
+        <a href="photo-credits.html">
+            Photo Credits
+        </a>
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
