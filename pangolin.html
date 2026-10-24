@@ -1001,14 +1001,32 @@
 
         @media (max-width: 700px) {
 
-            header h1 {
-                font-size: 32px;
+            /* SMALLER HEADER ON MOBILE */
+
+            header {
+                padding: 25px 15px;
             }
 
-            nav a {
-                display: block;
+            header h1 {
+                font-size: 27px;
+                line-height: 1.2;
+                margin-bottom: 8px;
+            }
 
-                margin: 8px;
+            header p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            nav {
+                padding: 6px 8px;
+             }
+
+            nav a {
+                display: inline-block;
+                margin: 4px 6px;
+                padding: 4px 2px;
+                font-size: 14px;
             }
 
             main {
